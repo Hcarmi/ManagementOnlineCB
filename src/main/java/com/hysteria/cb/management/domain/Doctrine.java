@@ -20,4 +20,7 @@ public class Doctrine implements Serializable {
     @Column(name = "TYPE")
     private String type;
 
+    @Column(name = "IMAGE")
+    private byte[] image;
+
 }

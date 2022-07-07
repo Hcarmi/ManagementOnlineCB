@@ -20,6 +20,12 @@ public class Personnage implements Serializable {
     @Column(name = "NIVEAU", nullable = false)
     private Long niveau = 0l;
 
+    @Column(name = "SERVEUR", nullable = false)
+    private String serveur;
+
+    @Column(name = "IMAGE")
+    private byte[] image;
+
     @OneToMany(mappedBy = "personnage")
     private Set<Caserne> casernes =  new HashSet<>();
 
@@ -27,6 +33,12 @@ public class Personnage implements Serializable {
     @MapsId("idUtilisateur")
     private Utilisateur utilisateur;
 
-    // TODO : liaison avec Classe (ManyToMany); SetArmure?; 
+    @ManyToOne
+    @MapsId("idMaison")
+    private Maison maison;
+
+
+
+    // TODO : liaison avec Classe (ManyToMany); SetArmure?;
 
 }

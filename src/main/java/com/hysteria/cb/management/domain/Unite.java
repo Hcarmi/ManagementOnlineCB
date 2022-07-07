@@ -23,8 +23,17 @@ public class Unite implements Serializable {
     @Column(name = "Type")
     private String type;
 
+    @Column(name = "TIER")
+    private Long tier;
+
     @Column(name = "FACTION")
     private String faction;
+
+    @Column(name = "IMAGE")
+    private byte[] image;
+
+    @Column(name = "ICONE")
+    private byte[] icone;
 
     @OneToMany(mappedBy = "unite")
     private Set<Caserne> casernes = new HashSet<>();

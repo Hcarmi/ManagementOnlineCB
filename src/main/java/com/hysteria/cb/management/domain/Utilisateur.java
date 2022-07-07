@@ -20,6 +20,9 @@ public class Utilisateur implements Serializable {
     @Column(name = "PASSWORD", nullable = false)
     private String password;
 
+    @Column(name = "PAYS", nullable = false)
+    private String pays = "France";
+
     @OneToMany(mappedBy = "utilisateur")
     private Set<Personnage> personnages = new HashSet<>();
 

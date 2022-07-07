@@ -22,4 +22,5 @@ public class Caserne {
     @Column(name = "NIVEAU", nullable = false)
     private Long niveau = 0l;
 
+    // TODO : ajout liaison doctrine : ManyToMany et ajout attribut : activated
 }
