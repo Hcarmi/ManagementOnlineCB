@@ -11,7 +11,6 @@ public class Unite implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
     private Long idUnite ;
 
     @Column(name = "NAME")
@@ -34,6 +33,9 @@ public class Unite implements Serializable {
 
     @Column(name = "ICONE")
     private byte[] icone;
+
+    @Column(name = "INFLUENCE")
+    private Long influence;
 
     @OneToMany(mappedBy = "unite")
     private Set<Caserne> casernes = new HashSet<>();

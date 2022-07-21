@@ -17,7 +17,12 @@ public class Spell implements Serializable {
     @Column(name = "DESCRIPTION_STR")
     private String descriptionStr;
 
-    // TODO : description byte[]
+    @Column(name = "DESCRIPTION")
+    private byte[] description;
+
+    @ManyToOne
+    @MapsId("idClasse")
+    private Classe classe;
 
 
 }
