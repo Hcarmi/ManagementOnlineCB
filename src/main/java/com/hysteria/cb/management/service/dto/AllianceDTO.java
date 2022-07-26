@@ -1,2 +1,4 @@
-package com.hysteria.cb.management.service.dto;public class AllianceDTO {
+package com.hysteria.cb.management.service.dto;
+
+public class AllianceDTO {
 }

@@ -1,2 +1,4 @@
-package com.hysteria.cb.management.service.dto;public class CaserneDTO {
+package com.hysteria.cb.management.service.dto;
+
+public class CaserneDTO {
 }
